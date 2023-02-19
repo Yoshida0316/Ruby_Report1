@@ -13,7 +13,7 @@ memo_name = gets.chomp
 puts "メモを入力してください"
 puts "入力後にctrl+Dを入力してください"
 
-CSV.open('#{memo_name}.csv','w') do |csv|
+CSV.open("#{memo_name}.csv","w") do |csv|
 memo = STDIN.read
 csv << ["#{memo}"]
 
@@ -25,7 +25,7 @@ memo_name = gets.chomp
 puts "メモを入力してください"
 puts "入力後にctrl+Dを入力してください"
 
-CSV.open('#{memo_name}.csv','a') do |csv|
+CSV.open("#{memo_name}.csv","a") do |csv|
 memo = STDIN.read
 csv << ["#{memo}"]
 end
